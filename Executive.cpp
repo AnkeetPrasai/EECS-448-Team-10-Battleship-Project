@@ -1,14 +1,16 @@
 /**
-*	@author
-*	@date
-*	@file
-*	@brief
+*	@author Team 10
+*	@date 02/19/21
+*	@file Executive.cpp
+*	@brief Sets up board with ships for game
 */
 #include "Board.h"
 #include "Executive.h"
 #include "Ships.h"
 #include <string>
 #include <iostream>
+
+
 Executive::Executive()
 {
 	p1Carrier.buildShip(6);
@@ -27,9 +29,12 @@ Executive::Executive()
 
 void Executive::run()
 {
-	PrintMenu();
-	Game();
+	/// Game runtime function, requries input from both players, Displays prompts from the console and takes input. 
+	/// Uses a turn counter to regulate turns for Player 1 and Player 2
 
+	PrintMenu();
+	
+	Game();
 
 	//SAMPLE PROMPTS: ALL OF THESE NEED TO BE CODED INTO THEIR RESPECITVE SPOTS
 	 //ADD code to make actually affect board.
